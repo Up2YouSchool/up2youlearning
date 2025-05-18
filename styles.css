@@ -326,49 +326,9 @@ header {
   color: #000000;
 }
 
-.final-line{
-    padding: 32px 16px;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-}
+/*SEÇÃO DE REVIEW DE USUARIOS*/
 
-.cta-title{
-    
-    color: #000000;
-    font-size:24px;
-    margin-bottom:15px;
-}
-
-.cta-subtitle{
-    color: #000000;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.cta-buttons{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.cta-btn-1{
-    background-color: #FF6B4A;
-    color: #ffffff;
-    padding: 10px 22px;
-    border-radius: 10px;
-    font-size: 12px;
-}
-
-.cta-btn-2{
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px 22px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.review-section3{
+.review-section{
     background-color: #EDEDED;
     padding: 32px 16px;
     font-family: "Inter", sans-serif;
@@ -411,7 +371,7 @@ header {
     font-size: 14px;
 
 }
-.container2 {
+.review-section .container {
     max-width: 45rem;
     width: 100%;
     margin: 0 auto;
@@ -424,8 +384,53 @@ header {
     position: absolute;
     font-size: 40px;
     margin-bottom: 80px;
-}	
+}
 
+/*SEÇÃO BOTÕES CTA*/
+
+.cta-section{
+    background-color: #264653;
+    padding: 32px 16px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.cta-title{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cta-btn-1{
+    background-color: #FF6B4A;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.cta-btn-2{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* FOOTER */
 
 .footer *{
     box-sizing: border-box;
@@ -433,13 +438,12 @@ header {
     padding: 0;
 }
 .footer{
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #000000;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    box-shadow: 0 2px 4px #ff6b4a;
 }
 
 .footer .container{
@@ -490,4 +494,3 @@ header {
     margin-top: -25px;
     margin-right: 100px;
 }
-
