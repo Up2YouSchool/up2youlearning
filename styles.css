@@ -501,6 +501,30 @@ align-content: center;
   background-color: #e55b39;
 }
 
+/*SOBRE NÓS*/
+.boxsobrenos{
+    border: 2px solid #ff6b4a; /* Borda laranja */
+    background-color: #fff  ; /* Fundo branco (opcional) */
+    margin: auto;          /* Centraliza horizontalmente */   
+    max-width: 700px;      /* Limita a largura máxima */
+    margin: 32px auto;     /* Centraliza e espaça as divs verticalmente */
+    padding: 24px 32px;    /* Espaçamento interno */
+    background: #fff;      /* Fundo branco (opcional) */
+    border-radius: 12px;   /* Cantos arredondados (opcional) */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra leve (opcional) */
+}
+
+.boxsobrenos h2 {
+   color:  #ff6b4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxsobrenos p {
+  color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 
 .footer *{
