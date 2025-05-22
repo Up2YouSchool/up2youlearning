@@ -1,8 +1,9 @@
+
 body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #fdfcfc;
     }
 
     section1 {
@@ -13,8 +14,17 @@ body {
 
   
 
-    .container {
+    .container-ia {
       max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 0px;
+    }  
+    .container-why {
+      background-color:#ddd;
+      border-radius: 10px;
+      max-width: 900px;
       margin: 0 auto;
       padding-left: 16px;
       padding-right: 16px;
@@ -86,11 +96,19 @@ header {
 }
 
 .div{
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  justify-content: space-between !important;
   align-items: center;
   height: auto;
 }
+.container-presentation .presentation{
+      display: flex;
+      margin: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+       justify-content: space-between !important;
+      padding-top: 0px;
+    }  
 
 .flex-grow {
   flex-grow: 1;
