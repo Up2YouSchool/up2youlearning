@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - UP2YOU</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="flex items-center justify-between bg-white p-4 shadow-md">
+    <nav class="topnav">
+      <a href="index.html" class="flex items-center">
+        <img src="img/logoup2you.png" alt="Logo UP2YOU" width="100" height="100" />
+      </a>
+      <a href="index.html">Home</a>
+      <a href="portal.html">Portal do aluno</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="login.html" class="btn-primary" 
+        style="width:120px; height:32px; display:flex; align-items:center; justify-content:center;">Login</a>
+    </nav>
+  </header>
+
+  <section class="cadastro-section">
+    <form action="login.php" method="POST">
+      <h2 style="color:#ff6b4a; text-align:center; margin-bottom:16px;">Login</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Entrar</button>
+      <p style="text-align:center; margin-top:12px;">
+        Não tem conta? <a href="cadastro.html" style="color:#ff6b4a;">Cadastre-se</a>
+      </p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-logo">
+        <img src="img/logoup2you.png" alt="Logo UP2YOU - Escola de Inglês">
+      </div>
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="questionario.html">Questionário</a></li>
+          <li><a href="portal.html">Portal do Aluno</a></li>
+        </ul>
+      </div>
+      <div class="footer-extra">
+        <h4>Links Extras</h4>
+        <ul>
+          <li><a href="#novidades">Novidades</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#parcerias">Parcerias</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+        </ul>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="instagram.com">Instagram: @up2you</a></li>
+          <li><a href="whatsapp.com">WhatsApp: 34 9 9999-9999</a></li>
+          <li><a href="email.com">Email: up2you@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
