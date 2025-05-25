@@ -1,4 +1,3 @@
-
 body {
       margin: 0;
       padding: 0;
@@ -663,5 +662,117 @@ align-content: center;
     display: block;
     margin-top: -25px;
     margin-right: 100px;
+}
+
+/* Garante que imagens não ultrapassem o container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajusta o header e navegação para mobile */
+@media (max-width: 800px) {
+  .topnav {
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+  .topnav a, .topnav .btn-primary {
+    width: 100%;
+    justify-content: flex-start !important;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+}
+
+/* Ajusta containers principais */
+@media (max-width: 600px) {
+  .container-presentation .presentation,
+  .containerbox,
+  .container-ia,
+  .container-why,
+  .container,
+  .containerchat {
+    flex-direction: column !important;
+    padding: 8px !important;
+    gap: 12px !important;
+    max-width: 100% !important;
+  }
+
+  .containerbox {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .box {
+    width: 100% !important;
+    min-width: unset;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .chat,
+  .info {
+    padding: 10px !important;
+  }
+
+  .review-section, .final-line {
+    padding: 16px 4px !important;
+    border-radius: 10px;
+  }
+
+  .review-title, .review-subtitle, .cta-title, .cta-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Ajusta formulário de cadastro/login */
+@media (max-width: 600px) {
+  .cadastro-section {
+    padding: 16px 4px !important;
+    margin: 12px auto !important;
+    max-width: 98vw !important;
+    min-width: unset;
+    border-radius: 10px;
+  }
+  .cadastro-section form {
+    gap: 8px;
+  }
+}
+
+/* Ajusta footer para mobile */
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 12px 4px !important;
+  }
+  .footer-logo img {
+    width: 80px !important;
+    height: auto !important;
+  }
+  .footer-links, .footer-extra, .footer-contato {
+    margin-bottom: 12px;
+  }
+}
+
+/* Garante que textos grandes não estourem a tela */
+h1, h2, h3, h4, p, label {
+  word-break: break-word;
 }
 
