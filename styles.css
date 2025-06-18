@@ -487,9 +487,8 @@ align-content: center;
  
 .licao-wrapper {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center;
   align-items: center;  
-     /* centraliza verticalmente */            /* ocupa quase toda a altura da tela */
 }
 
 .licao-card {
@@ -522,15 +521,15 @@ align-content: center;
 
 /*SOBRE NÓS*/
 .boxsobrenos{
-    border: 2px solid #ff6b4a; /* Borda laranja */
-    background-color: #fff  ; /* Fundo branco (opcional) */
-    margin: auto;          /* Centraliza horizontalmente */   
-    max-width: 700px;      /* Limita a largura máxima */
-    margin: 32px auto;     /* Centraliza e espaça as divs verticalmente */
-    padding: 24px 32px;    /* Espaçamento interno */
-    background: #fff;      /* Fundo branco (opcional) */
-    border-radius: 12px;   /* Cantos arredondados (opcional) */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra leve (opcional) */
+    border: 2px solid #ff6b4a; 
+    background-color: #fff  ; 
+    margin: auto;            
+    max-width: 700px;   
+    margin: 32px auto;     
+    padding: 24px 32px;   
+    background: #fff;     
+    border-radius: 12px;   
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
 }
 
 .boxsobrenos h2 {
@@ -599,6 +598,62 @@ align-content: center;
   background: #e55b39;
 }
 
+/*carrossel*/
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
 
 .footer *{
     box-sizing: border-box;
@@ -664,13 +719,11 @@ align-content: center;
     margin-right: 100px;
 }
 
-/* Garante que imagens não ultrapassem o container */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Ajusta o header e navegação para mobile */
 @media (max-width: 800px) {
   .topnav {
     flex-direction: column;
@@ -693,7 +746,6 @@ img {
   }
 }
 
-/* Ajusta containers principais */
 @media (max-width: 600px) {
   .container-presentation .presentation,
   .containerbox,
@@ -740,7 +792,6 @@ img {
   }
 }
 
-/* Ajusta formulário de cadastro/login */
 @media (max-width: 600px) {
   .cadastro-section {
     padding: 16px 4px !important;
@@ -754,7 +805,6 @@ img {
   }
 }
 
-/* Ajusta footer para mobile */
 @media (max-width: 800px) {
   .footer-content {
     flex-direction: column !important;
@@ -771,7 +821,6 @@ img {
   }
 }
 
-/* Garante que textos grandes não estourem a tela */
 h1, h2, h3, h4, p, label {
   word-break: break-word;
 }
