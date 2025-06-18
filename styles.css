@@ -65,6 +65,19 @@ header {
   height: 60px; /* Altura do menu */
 }
 
+.topnavbutton {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000000 !important;
+  overflow: hidden;
+  background-color: #ffffff;  
+  display: flex;
+  align-items: center;
+  gap: 180px; /* Espaçamento entre os itens */
+  justify-content: space-between;
+  height: 60px; /* Altura do menu */
+}
+
+
 .topnav a {
   text-decoration: none;
   color: #333;
@@ -445,15 +458,16 @@ header {
     margin-bottom: 80px;
 }	
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .portal h2{
-  color: #414141;
-text-align: center;
-font-size: 28px;
-align-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  align-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 2px auto;
+  max-width: 100%;
 }
 
 .portal nav{
@@ -463,32 +477,60 @@ align-content: center;
   color: #ff6b4a;
 }
 
-.progresso-box {
-  display: inline-block;
-  border: 2px solid #ff6b4a;
-  border-radius: 20px;
-  padding: 8px 24px;
-  margin: 24px auto;
-  /* Centraliza horizontalmente se o pai tiver text-align: center */
-}
 
-/* Centraliza o .progresso-box no pai */
-.centraliza-progresso {
+.progresso-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  justify-content: space-between !important;
+}
+.progresso-box h2 {
+  font-size: 1.5rem;
+  color: #264653;
+  margin-bottom: 16px;
   text-align: center;
 }
 
-.progresso-box h2 {
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  display: block;
+.progresso-item {
+  margin-bottom: 18px;
 }
- 
+
+.progresso-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #264653;
+}
+
+.progresso-bar {
+  background: #eee;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progresso-bar-inner {
+  background: linear-gradient(90deg, #ff6b4a 60%, #ffb88c 100%);
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.6s;
+}
+
+.progresso-percent {
+  font-size: 0.95em;
+  color: #ff6b4a;
+  font-weight: bold;
+}
 .licao-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centraliza horizontalmente */
   align-items: center;  
+     /* centraliza verticalmente */            /* ocupa quase toda a altura da tela */
 }
 
 .licao-card {
@@ -521,15 +563,15 @@ align-content: center;
 
 /*SOBRE NÓS*/
 .boxsobrenos{
-    border: 2px solid #ff6b4a; 
-    background-color: #fff  ; 
-    margin: auto;            
-    max-width: 700px;   
-    margin: 32px auto;     
-    padding: 24px 32px;   
-    background: #fff;     
-    border-radius: 12px;   
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+    border: 2px solid #ff6b4a; /* Borda laranja */
+    background-color: #fff  ; /* Fundo branco (opcional) */
+    margin: auto;          /* Centraliza horizontalmente */   
+    max-width: 700px;      /* Limita a largura máxima */
+    margin: 32px auto;     /* Centraliza e espaça as divs verticalmente */
+    padding: 24px 32px;    /* Espaçamento interno */
+    background: #fff;      /* Fundo branco (opcional) */
+    border-radius: 12px;   /* Cantos arredondados (opcional) */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra leve (opcional) */
 }
 
 .boxsobrenos h2 {
@@ -655,6 +697,7 @@ align-content: center;
   background: rgba(0,0,0,0.8);
 }
 
+
 .footer *{
     box-sizing: border-box;
     margin: 0;
@@ -719,11 +762,13 @@ align-content: center;
     margin-right: 100px;
 }
 
+/* Garante que imagens não ultrapassem o container */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Ajusta o header e navegação para mobile */
 @media (max-width: 800px) {
   .topnav {
     flex-direction: column;
@@ -746,6 +791,7 @@ img {
   }
 }
 
+/* Ajusta containers principais */
 @media (max-width: 600px) {
   .container-presentation .presentation,
   .containerbox,
@@ -792,6 +838,7 @@ img {
   }
 }
 
+/* Ajusta formulário de cadastro/login */
 @media (max-width: 600px) {
   .cadastro-section {
     padding: 16px 4px !important;
@@ -805,6 +852,7 @@ img {
   }
 }
 
+/* Ajusta footer para mobile */
 @media (max-width: 800px) {
   .footer-content {
     flex-direction: column !important;
@@ -821,6 +869,7 @@ img {
   }
 }
 
+/* Garante que textos grandes não estourem a tela */
 h1, h2, h3, h4, p, label {
   word-break: break-word;
 }
